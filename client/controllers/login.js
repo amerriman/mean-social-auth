@@ -1,5 +1,5 @@
 app.controller('loginCtrl', function($scope, $auth, $rootScope, $window, $location) {
-
+//$auth is for satellizer?
   $scope.login = function() {
 
     var user = {

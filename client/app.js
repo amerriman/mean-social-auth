@@ -4,8 +4,15 @@ app.config(function($routeProvider, $authProvider, $locationProvider) {
 
   // *** satellizer settings *** //
   $authProvider.github({
-    clientId: 'ADD CLIENT ID',
-    redirectUri: 'UPDATE',
+    url: '/auth/github',
+    clientId: '7c5a4a88e8fdce8e653c',
+    redirectUri: window.location.origin
+  });
+
+  $authProvider.google({
+    url: '/auth/google',
+    clientId: '481835593158-9fdttvs962fhs69jbuh64hrgimhr0mrc.apps.googleusercontent.com',
+    redirectUri: window.location.origin
   });
 
   $routeProvider
